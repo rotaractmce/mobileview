@@ -1,33 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #2c2c41e1;
     font-size: 16px;
     line-height: 1.5;
 }
 
-h2 {
+h2, p {
     margin-bottom: 1rem;
 }
 
-p {
-    margin-bottom: 1rem;
-}
-
-.header{
+/* Header Styles */
+.header {
     min-height: 100vh;
     width: 100%;
-    background:#21212ce1;
+    background: #21212ce1;
     position: relative;
     padding: 0 15px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     padding: 20px;
     align-items: center;
@@ -35,29 +32,30 @@ p {
     flex-wrap: wrap;
 }
 
-nav{
+nav {
     flex: 1;
     text-align: right;
 }
 
-.logo img{
+.logo img {
     transition: 0.8s ease-in-out;
     margin-top: 4px;
     cursor: pointer;
 }
 
-.logo img:hover{
+.logo img:hover {
     transform: scale(1.12) rotate(360deg);
 }
 
-nav ul{
+/* Navigation Styles */
+nav ul {
     display: flex;
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     border: 1px solid #8f7ace;
     padding: 7px 22px;
@@ -67,24 +65,25 @@ nav ul li{
     cursor: pointer;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     background: #c4197a;
     border: 1px solid #8f7ace;
-    transform: translate(-6px,-6px);
+    transform: translate(-6px, -6px);
 }
 
-a{
+a {
     text-decoration: none;
     color: #8f7ace;
     font-size: 15.5px;
     cursor: pointer;
 }
 
-nav ul li:hover a{
+nav ul li:hover a {
     color: #ffffff;
 }
 
-.about1{
+/* About Section Styles */
+.about1 {
     width: 90%;
     height: 15vh;
     margin: auto;
@@ -103,12 +102,12 @@ nav ul li:hover a{
     text-align: center;
 }
 
-.about1:hover{
+.about1:hover {
     transition: transform .2s ease;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-hr{
+hr {
     width: 90%;
     margin: auto;
     margin-top: 2rem;
@@ -116,7 +115,7 @@ hr{
     border-radius: 1em;
 }
 
-.about2{
+.about2 {
     width: 90%;
     margin: auto;
     margin-top: 2rem;
@@ -130,30 +129,32 @@ hr{
     padding-bottom: 2rem;
 }
 
-.about2 h2{
+.about2 h2 {
     color: #c21252;
     font-size: 40px;
 }
 
-.about2 p{
+.about2 p {
     font-size: 1.2em;
     text-align: justify;
     padding: 0 40px;
 }
 
-.about2:hover{
+.about2:hover {
     transition: transform .2s ease;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.team{
+/* Team Styles */
+.team {
     text-align: center;
     color: white;
     margin-top: 3rem;
     font-size: 50px;
 }
 
-.flexbox1{
+/* Flexbox Styles */
+.flexbox1 {
     padding-top: 2vh;
     background-color: whitesmoke;
     color: black;
@@ -172,12 +173,13 @@ hr{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-#pic{
+#pic {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
 }
 
+/* Footer Styles */
 .footer1 {
     background-color: #8f7ace;
     color: white;
@@ -186,12 +188,13 @@ hr{
     text-align: center;
 }
 
-.footer1 p{
+.footer1 p {
     margin: 0;
     padding-top: 15px;
     font-size: 15px;
 }
 
+/* Button Styles */
 .button {
     border-radius: 0.5rem;
     background-color: #8f7ace;
@@ -232,6 +235,7 @@ hr{
     right: 0;
 }
 
+/* Media Queries */
 @media (max-width: 1024px) {
     .about1, .about2, .flexbox1 {
         width: 95%;
@@ -270,19 +274,4 @@ hr{
         padding: 10px;
     }
 
-    .about1, .about2, .flexbox1 {
-        width: 95%;
-        font-size: 4vw;
-        padding: 15px;
-    }
-
-    .footer1 {
-        padding: 10px;
-    }
-
-    .button {
-        font-size: 3.5vw;
-        padding: 10px;
-        width: 90%;
-    }
-}
+    .about1, .about2, .flexbox1
