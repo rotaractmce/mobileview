@@ -1,42 +1,54 @@
-*{
+/* General Reset and Styles */
+* {
     margin: 0;
     padding: 0;
 }
-html{
-     scroll-behavior: smooth;
-    }
-body{
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: #21212cf0;
 }
-.header{
+
+/* Header and Navbar */
+.header {
     min-height: 100vh;
     width: 100%;
     background: #21212cf0;
     position: relative;
 }
-.navbar{
+
+.navbar {
     display: flex;
     padding: 20px 50px;
     align-items: center;
     background: #02021c;
+    flex-wrap: wrap;
 }
-nav{
+
+nav {
     flex: 1;
     text-align: right;
 }
-.logo img{
+
+.logo img {
     transition: 0.8s ease-in-out;
     margin-top: 4px;
     cursor: pointer;
 }
-.logo img:hover{
+
+.logo img:hover {
     transform: scale(1.12) rotate(360deg);
 }
-nav ul{
+
+nav ul {
     display: inline-block;
     list-style-type: none;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     border: 1px solid #8f7ace;
     padding: 7px 22px;
@@ -45,23 +57,27 @@ nav ul li{
     transition: 0.3s;
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     color: #8f7ace;
     font-size: 15.5px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
-nav ul li:hover a{
+
+nav ul li:hover a {
     color: #ffffff;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     background: #c4197a;
     border: 1px solid #8f7ace;
-    transform: translate(-6px,-6px);
+    transform: translate(-6px, -6px);
 }
 
-  .about1{
+/* About Section */
+.about1 {
     width: 90%;
     height: 15vh;
     margin: auto;
@@ -76,12 +92,12 @@ nav ul li:hover{
     font-weight: 800;
     justify-content: center;
     font-size: 60px;
-    padding-top: 0%;
     padding-left: 1vw;
     border-left: 0.3rem solid #8f7ace;
 }
 
-hr{
+/* Horizontal Line */
+hr {
     width: 90%;
     margin: auto;
     margin-top: 2rem;
@@ -89,14 +105,16 @@ hr{
     border-radius: 1em;
 }
 
-#social_media{
-    font-family: 'Poppins',sans-serif;
+/* Social Media Section */
+#social_media, #youtube {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #ffffff;
     margin-top: 2rem;
     font-weight: 500;
 }
-    .social_media2{
+
+.social_media2, .youtube2 {
     width: 90%;
     height: 40vh;
     display: flex;
@@ -104,99 +122,123 @@ hr{
     border-radius: 1rem;
     border-left: 0.3rem solid #8f7ace;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: auto;
-    justify-content: space-around;
-    background-color:#21212cf0;
+    background-color: #21212cf0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-    .insta{
-        width: 25%;
-        height: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(230, 67, 102);
-        border-radius: 0.5vw;
-    }
-    .linkedin{
-        width: 25%;
-        height: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(22, 58, 100);
-        border-radius: 0.5vw;
+}
+
+.insta, .linkedin, .youtube3 {
+    width: 25%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5vw;
+    transition: opacity 0.3s;
+}
+
+.insta {
+    background-color: rgb(230, 67, 102);
+}
+
+.linkedin {
+    background-color: rgb(22, 58, 100);
+}
+
+.youtube3 {
+    background-color: darkred;
+}
+
+.insta_img, .linkedin_img, .youtube_img {
+    width: 10vw;
+    height: 20vh;
+}
+
+.insta:hover, .linkedin:hover, .youtube3:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+.footer1 {
+    background-color: #8f7ace;
+    color: white;
+    height: 10vh;
+    margin: 0px;
+    line-height: 5vh;
+    text-align: center;
+}
+
+.footer1 p {
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .about1 {
+        font-size: 40px;
+        height: auto;
+        padding: 20px;
     }
 
-    .insta:hover{
-        opacity: 0.7;
+    .social_media2, .youtube2 {
+        flex-direction: column;
+        height: auto;
     }
-    .linkedin:hover{
-        opacity: 0.7;
-    }
-    
-    .insta_img {
-        width: 10vw;
+
+    .insta, .linkedin, .youtube3 {
+        width: 80%;
         height: 20vh;
+        margin-bottom: 20px;
     }
-    
-    .linkedin_img {
-        width: 10vw;
-        height: 20vh;
-        
+
+    .insta_img, .linkedin_img, .youtube_img {
+        width: 50%;
+        height: auto;
     }
-    #youtube{
-        margin-top: 2vh;
-        font-family: 'Poppins',sans-serif;
-        text-align: center;
-        color: #ffffff;
-        margin-top: 2rem;
-        font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
     }
-    .youtube2{
+
+    nav ul {
+        text-align: left;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        padding: 5px 10px;
+    }
+
+    .about1 {
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    .social_media2, .youtube2 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .insta, .linkedin, .youtube3 {
         width: 90%;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    border-radius: 1rem;
-    border-left: 0.3rem solid #8f7ace;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    justify-content: space-around;
-    background-color: #2a2a2c;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        height: 15vh;
+        margin-bottom: 20px;
     }
-    .youtube3
-    {
+
+    .insta_img, .linkedin_img, .youtube_img {
         width: 30%;
-        height: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: darkred;
-        border-radius: 0.5vw;
+        height: auto;
     }
-    .youtube_img{
-        width: 100%;
-        height: 100%;
-    }
-    .youtube3:hover{
-        opacity: 0.7;
-    }
+
     .footer1 {
-        background-color: #8f7ace;
-        color: white;
-        height: 10vh;
-        margin: 0px;
-        line-height: 5vh;
-        text-align: center;
+        padding: 10px;
+        line-height: 3vh;
     }
-    .footer1 p{
-        padding-top: 15px;
-        font-size: 15px;
-        font-family: 'Poppins',sans-serif;
-    }
+}
