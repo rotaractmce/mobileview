@@ -1,36 +1,30 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Root Variables */
-:root {
-    --primary-color: #c21252;
-    --secondary-color: #8f7ace;
-    --background-color: #02021c;
-    --text-color: #ffffff;
-}
-
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 
 .header {
     min-height: 100vh;
     width: 100%;
-    background: rgba(33, 33, 33, 0.95);
+    background: rgba(33, 33, 33, 0.95); /* Adjusted for better readability */
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar {
     display: flex;
     padding: 20px 50px;
     align-items: center;
-    background: var(--background-color);
+    background: #02021c;
 }
 
 nav {
@@ -55,7 +49,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid #8f7ace;
     padding: 7px 22px;
     margin: 10px 15px;
     box-shadow: 4px 4px 5.5px #131417;
@@ -65,18 +59,18 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: #8f7ace;
     font-size: 15.5px;
     cursor: pointer;
 }
 
 nav ul li:hover a {
-    color: var(--text-color);
+    color: #ffffff;
 }
 
 nav ul li:hover {
-    background: var(--primary-color);
-    border: 1px solid var(--secondary-color);
+    background: #c4197a;
+    border: 1px solid #8f7ace;
     transform: translate(-6px, -6px);
 }
 
@@ -89,7 +83,7 @@ nav ul li:hover {
 }
 
 h1, h3 {
-    color: var(--primary-color);
+    color: #c21252;
     text-align: center;
     margin: 20px 0;
     font-family: 'Times New Roman', Times, serif;
@@ -98,7 +92,7 @@ h1, h3 {
 p {
     font-size: 16px;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: #8f7ace;
     text-align: justify;
     padding-top: 5px;
     font-family: 'Times New Roman', Times, serif;
@@ -106,7 +100,7 @@ p {
 
 .team {
     font-size: 60px;
-    color: var(--text-color);
+    color: #ffffff;
     font-weight: 600;
     text-align: center;
     margin: 25px auto 20px;
@@ -116,7 +110,7 @@ p {
     content: '';
     width: 0%;
     height: 3px;
-    background: var(--secondary-color);
+    background: #8f7ace;
     display: block;
     margin: auto;
     transition: 0.2s;
@@ -139,14 +133,14 @@ p {
 }
 
 /* Footer Styles */
-.footer1 {
+.footer {
     background-color: #ffffff;
     padding: 20px 0;
 }
 
 .rights {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: #8f7ace;
+    color: white;
     text-align: center;
     padding: 10px 0;
 }
