@@ -12,7 +12,7 @@ body {
 .header {
     min-height: 100vh;
     width: 100%;
-    background: #21212cf0;
+    background: rgba(33, 33, 33, 0.95); /* Adjusted for better readability */
     position: relative;
 }
 
@@ -75,7 +75,7 @@ nav ul li:hover {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px 0; /* Add some margin for spacing */
+    margin: 20px 0;
 }
 
 h1, h3 {
@@ -128,7 +128,7 @@ p {
     margin: auto;
 }
 
-/* Footer */
+/* Footer Styles */
 .footer {
     background-color: #ffffff;
     padding: 20px 0;
@@ -221,5 +221,4 @@ p {
         font-size: 40px;
     }
 }
-
 
